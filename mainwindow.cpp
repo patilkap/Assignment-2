@@ -3,11 +3,12 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
-}
-    QObject::connect(ui->Calculate, SIGNAL(button_pressed()), this, SLOT(compute()));
+    ui(new Ui::MainWindow)  {ui->setupUi(this);}
+
+    QButtonGroup *calc = new QButtonGroup;
+    QObject::connect(calc, SIGNAL(button_pressed()), this, SLOT(compute()))
+    QObject::connect(ui->hw1box, SIGNAL(valueChanged(double)),hw1slider,SLOT(setValue(int)) )
+    QObject::connect(horizontalSlider1,SIGNAL(valueChanged(int)),spinBox1,SLOT(setValue(double)) )
 
 MainWindow::~MainWindow()
 {
@@ -19,7 +20,6 @@ void MainWindow::gethw1(){
 }
 
 void MainWindow::sethw1(){
-    double t = ui->hw1slider();
-    ui->hw1box(t);
+    ui->hw1box->setValue(ui->hw1slider->tickInterval());
 
 }
