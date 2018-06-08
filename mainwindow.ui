@@ -87,14 +87,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="hw4box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="hw4box"/>
      </item>
     </layout>
    </widget>
@@ -132,14 +125,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="hw5box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="hw5box"/>
      </item>
     </layout>
    </widget>
@@ -190,14 +176,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="hw6box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="hw6box"/>
      </item>
     </layout>
    </widget>
@@ -211,7 +190,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Homework 6</string>
+     <string>Homework 7</string>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget_4">
@@ -235,14 +214,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="hw7box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="hw7box"/>
      </item>
     </layout>
    </widget>
@@ -306,14 +278,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="mt1box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="mt1box"/>
      </item>
     </layout>
    </widget>
@@ -354,14 +319,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="mt2box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="mt2box"/>
      </item>
     </layout>
    </widget>
@@ -415,14 +373,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="febox">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="fnlbox"/>
      </item>
     </layout>
    </widget>
@@ -977,20 +928,19 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="pageStep">
+        <number>10</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="hw1box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="hw1box"/>
      </item>
     </layout>
    </widget>
@@ -1015,14 +965,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="hw2box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="hw2box"/>
      </item>
     </layout>
    </widget>
@@ -1047,14 +990,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="hw3box">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="maximum">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
+      <widget class="QSpinBox" name="hw3box"/>
      </item>
     </layout>
    </widget>
@@ -1062,5 +998,326 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>hw1slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw1box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw1box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw1slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>229</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw2slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw2box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw2box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw2slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>149</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw3slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw3box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw3box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw3slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw4slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw4box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw4box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw4slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw5slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw5box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw5box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw5slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>173</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw6slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw6box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>385</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw6box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw6slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>177</x>
+     <y>391</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw7slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw7box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>457</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>454</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hw7box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hw7slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>447</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>450</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mt1slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>mt1box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>417</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mt1box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>mt1slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>499</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>453</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mt2slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>mt2box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mt2box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>mt2slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>454</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>feslider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>fnlbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>500</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fnlbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>feslider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>292</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

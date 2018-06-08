@@ -29,7 +29,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    unsigned double hw1, hw2, hw3, hw4, hw5, hw6, hw7, mt1, mt2, fnl;
+    double hw1, hw2, hw3, hw4, hw5, hw6, hw7, mt1, mt2, fnl;
 
 };
 
