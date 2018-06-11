@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->setupUi(this);
 
     //QButtonGroup *calc = new QButtonGroup;
-    QObject::connect(ui->Calculate, SIGNAL(button_pressed()), this, SLOT(compute()));
+    QObject::connect(ui->Calculate, SIGNAL(pressed()), this, SLOT(compute()));
    // QObject::connect(ui->hw1box, SIGNAL(valueChanged(double)),ui->hw1slider,SLOT(setValue(int)) );
    // QObject::connect(ui->,SIGNAL(valueChanged(int)),ui->spinBox1,SLOT(setValue(double)) );
 }
@@ -29,7 +29,8 @@ void MainWindow::compute(){
     double hwsum = hw1 + hw2 + hw3 + hw4 + hw5 + hw6 + hw7;
     double hwavg = hwsum/7;
     double total = (hwavg*0.25)+(mt1*0.2)+(mt2*0.2)+(fnl*0.35);
-    ui->LEDNum->value(total);
+    ui->GradeTotal->setNum(total);
+
 
     return;
 

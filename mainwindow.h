@@ -11,6 +11,8 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+ private slots:
+    void compute();
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
@@ -24,7 +26,7 @@ public:
     void getmt1();
     void getmt2();
     void getfnl();
-    void compute();
+ //   void compute();
 
 private:
     Ui::MainWindow *ui;
