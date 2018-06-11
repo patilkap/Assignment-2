@@ -9,10 +9,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //QButtonGroup *calc = new QButtonGroup;
     QObject::connect(ui->Calculate, SIGNAL(pressed()), this, SLOT(compute()));
-   // QObject::connect(ui->hw1box, SIGNAL(valueChanged(double)),ui->hw1slider,SLOT(setValue(int)) );
-   // QObject::connect(ui->,SIGNAL(valueChanged(int)),ui->spinBox1,SLOT(setValue(double)) );
+    QObject::connect(ui->A, SIGNAL(clicked()), this, SLOT(aclicked()));
+    QObject::connect(ui->B, SIGNAL(clicked()), this, SLOT(bclicked()));
 }
-MainWindow::~MainWindow()
+    MainWindow::~MainWindow()
 {
     delete ui;
 }
@@ -24,24 +24,36 @@ void MainWindow::gethw2(){
      this->hw2 = ui->hw2box->value();
 }
 
-
 void MainWindow::compute(){
     double hwsum = hw1 + hw2 + hw3 + hw4 + hw5 + hw6 + hw7;
     double hwavg = hwsum/7;
     double total;
-   if(ui->A){
+   if(methoda){
     total = (hwavg*0.25)+(mt1*0.2)+(mt2*0.2)+(fnl*0.35);
+    total = 2;
    }
-   if(ui->B){
+   if(methoda==false){
        double mt;
        if(mt1>mt2){mt = mt1;}
        else{mt = mt2;}
        total = (hwavg*0.25)+(mt*0.3)+(fnl*0.44);
+       total =5;
    }
-    ui->GradeTotal->setNum(5);
+    ui->GradeTotal->setNum(total);
 
 
     return;
 
 }
 
+
+void MainWindow::on_A_clicked(bool checked)
+{
+   if(checked) methoda=true;
+
+}
+
+void MainWindow::on_B_clicked(bool checked)
+{
+    if(checked) methoda=false;
+}

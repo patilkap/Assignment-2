@@ -13,6 +13,10 @@ class MainWindow : public QMainWindow
 
  private slots:
     void compute();
+    void on_A_clicked(bool checked);
+
+    void on_B_clicked(bool checked);
+
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
@@ -31,6 +35,7 @@ public:
 private:
     Ui::MainWindow *ui;
     double hw1, hw2, hw3, hw4, hw5, hw6, hw7, mt1, mt2, fnl;
+    bool methoda;
 
 };
 
