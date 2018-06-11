@@ -28,8 +28,17 @@ void MainWindow::gethw2(){
 void MainWindow::compute(){
     double hwsum = hw1 + hw2 + hw3 + hw4 + hw5 + hw6 + hw7;
     double hwavg = hwsum/7;
-    double total = (hwavg*0.25)+(mt1*0.2)+(mt2*0.2)+(fnl*0.35);
-    ui->GradeTotal->setNum(total);
+    double total;
+   if(ui->A){
+    total = (hwavg*0.25)+(mt1*0.2)+(mt2*0.2)+(fnl*0.35);
+   }
+   if(ui->B){
+       double mt;
+       if(mt1>mt2){mt = mt1;}
+       else{mt = mt2;}
+       total = (hwavg*0.25)+(mt*0.3)+(fnl*0.44);
+   }
+    ui->GradeTotal->setNum(5);
 
 
     return;
