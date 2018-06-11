@@ -81,13 +81,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="hw4box"/>
+      <widget class="QSpinBox" name="hw4box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -119,13 +126,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="hw5box"/>
+      <widget class="QSpinBox" name="hw5box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -170,13 +184,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="hw6box"/>
+      <widget class="QSpinBox" name="hw6box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -208,13 +229,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="hw7box"/>
+      <widget class="QSpinBox" name="hw7box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -272,13 +300,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="mt1box"/>
+      <widget class="QSpinBox" name="mt1box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -319,7 +354,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="mt2box"/>
+      <widget class="QSpinBox" name="mt2box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -373,7 +412,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="fnlbox"/>
+      <widget class="QSpinBox" name="fnlbox">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -928,6 +971,9 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="singleStep">
         <number>1</number>
        </property>
@@ -940,7 +986,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="hw1box"/>
+      <widget class="QSpinBox" name="hw1box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -959,13 +1009,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="hw2box"/>
+      <widget class="QSpinBox" name="hw2box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -984,13 +1041,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="hw3box"/>
+      <widget class="QSpinBox" name="hw3box">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>

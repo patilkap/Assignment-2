@@ -25,7 +25,6 @@ public:
     void getmt2();
     void getfnl();
     void compute();
-    void sethw1();
 
 private:
     Ui::MainWindow *ui;
